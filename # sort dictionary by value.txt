@@ -1,0 +1,9 @@
+# sort dictionary by value
+
+x = {1: 2, 3: 4, 4: 3, 2: 1, 0: 0}
+{k: v for k, v in sorted(x.items(), key=lambda item: item[1])}
+{0: 0, 2: 1, 1: 2, 4: 3, 3: 4}
+
+# return 1st value in dictionary
+first_value = next(iter(my_dict.values()))
+first_key = next(iter(my_dict.keys()))
